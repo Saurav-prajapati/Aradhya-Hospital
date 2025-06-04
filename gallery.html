@@ -3,7 +3,7 @@
 
     <head>
         <meta charset="utf-8">
-        <title>About | New Aradhya Hospital</title>
+        <title>Gallery - New Aradhya Hospital</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
@@ -11,7 +11,7 @@
         <!-- Google Web Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
         <!-- Icon Font Stylesheet -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
@@ -95,122 +95,66 @@
         </div>
         <!-- Navbar End -->
 
-
         <!-- Header Start -->
         <div class="container-fluid bg-breadcrumb">
             <div class="container text-center py-5" style="max-width: 900px;">
-                <h3 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">About Us</h1>
+                <h3 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Gallery</h1>
                 <ol class="breadcrumb justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                     <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                    <li class="breadcrumb-item active text-primary">About</li>
+                    <li class="breadcrumb-item active text-primary">Gallery</li>
                 </ol>    
             </div>
         </div>
         <!-- Header End -->
 
+        <section class="container-fluid custom-gallery-section py-5 bg-light">
+            <div class="container">
+                <div class="row g-3" id="custom-gallery-container">
+                <!-- Images will be inserted here by JS -->
+                </div>
+            </div>
 
-        <!-- About Start -->
-        <div class="container-fluid about bg-light py-5">
-            <div class="container py-5">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-5 wow fadeInLeft" data-wow-delay="0.2s">
-                        <div class="about-img pb-5 ps-5">
-                            <img src="img/about-1.jpg" class="img-fluid rounded w-100" style="object-fit: cover;" alt="Image">
-                            <div class="about-img-inner">
-                                <img src="img/about-2.jpg" class="img-fluid rounded-circle w-100 h-100" alt="Image">
-                            </div>
+            <!-- Modal -->
+            <div class="modal fade custom-gallery-modal" id="customImageModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content bg-transparent border-0">
+                        <div class="modal-body p-0">
+                        <img id="customModalImage" src="" class="w-100 rounded shadow" alt="Enlarged Image">
                         </div>
-                    </div>
-                    <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.4s">
-                        <div class="section-title text-start mb-5">
-                            <h4 class="sub-title pe-3 mb-0">About Us</h4>
-                            <p class="mb-4">New Aradhya Hospital, located in Bapu Ji Complex, Aligarh, is a trusted name in advanced and affordable healthcare. With a mission to provide compassionate, patient-centered treatment, we offer a wide range of medical services — from emergency care to specialized surgeries — all under one roof.</p>
-                            <p>Led by experienced doctors and supported by skilled medical staff, our hospital is equipped with modern facilities like ICU, ventilators, trauma care, neuro surgery, orthopedics, pathology lab, digital X-ray, physiotherapy, and more. We also actively support government healthcare initiatives like Ayushman Bharat and Pandit Deendayal Yojana, ensuring quality healthcare is accessible to all.</p>
-                            <p>At New Aradhya Hospital, we believe in healing with empathy, treating every patient with dignity, and delivering medical care that meets global standards. Your health and safety are our priority — today, tomorrow, and always.</p>
-                        </div>
+                        <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- About End -->
+        </section>
 
+        <script>
+            const galleryContainer = document.getElementById('custom-gallery-container');
 
-        <!-- Feature Start -->
-        <div class="container-fluid feature py-5">
-            <div class="container py-5">
-                <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="sub-style">
-                        <h4 class="sub-title px-3 mb-3">Why Choose Us</h4>
-                    </div>
-                    <p class="mb-0">At New Aradhya Hospital, we go beyond treatment — we deliver trust, care, and excellence. Our commitment to high-quality healthcare and patient satisfaction makes us a preferred choice for families across Aligarh and beyond.</p>
-                </div>
-                <div class="row g-4 justify-content-center">
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="row-cols-1 feature-item p-4">
-                            <div class="col-12">
-                                <div class="feature-icon mb-4">
-                                    <div class="p-3 d-inline-flex bg-white rounded">
-                                        <i class="fas fa-diagnoses fa-4x text-primary"></i>
-                                    </div>
-                                </div>
-                                <div class="feature-content d-flex flex-column">
-                                    <h5 class="mb-4">Comprehensive Medical Services</h5>
-                                    <p class="mb-0">From emergency care to specialized surgeries, diagnostics, and maternity services — we provide a complete range of healthcare under one roof.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="row-cols-1 feature-item p-4">
-                            <div class="col-12">
-                                <div class="feature-icon mb-4">
-                                    <div class="p-3 d-inline-flex bg-white rounded">
-                                        <i class="fas fa-briefcase-medical fa-4x text-primary"></i>
-                                    </div>
-                                </div>
-                                <div class="feature-content d-flex flex-column">
-                                    <h5 class="mb-4">Expert Doctors & Staff</h5>
-                                    <p class="mb-0">Our team of qualified doctors, surgeons, and healthcare professionals brings experience, dedication, and personalized care to every patient.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="row-cols-1 feature-item p-4">
-                            <div class="col-12">
-                                <div class="feature-icon mb-4">
-                                    <div class="p-3 d-inline-flex bg-white rounded">
-                                        <i class="fas fa-hospital-user fa-4x text-primary"></i>
-                                    </div>
-                                </div>
-                                <div class="feature-content d-flex flex-column">
-                                    <h5 class="mb-4">Modern Facilities & Equipment</h5>
-                                    <p class="mb-0">We are equipped with advanced medical technology including ICU, ventilators, digital X-ray, pathology labs, and well-maintained operation theaters.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="row-cols-1 feature-item p-4">
-                            <div class="col-12">
-                                <div class="feature-icon mb-4">
-                                    <div class="p-3 d-inline-flex bg-white rounded">
-                                        <i class="fas fa-users fa-4x text-primary"></i>
-                                    </div>
-                                </div>
-                                <div class="feature-content d-flex flex-column">
-                                    <h5 class="mb-4">Affordable & Accessible Care</h5>
-                                    <p class="mb-0">We proudly support Ayushman Bharat and Pandit Deendayal Yojana, making quality healthcare affordable and accessible for every section of society.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Feature End -->
+            for (let i = 1; i <= 50; i++) {
+                const col = document.createElement('div');
+                col.className = 'col-6 col-md-4 col-lg-3';
 
+                const wrapper = document.createElement('div');
+                wrapper.className = 'custom-gallery-wrapper';
+
+                const img = document.createElement('img');
+                img.src = `img/gallery/${i}.jpeg`;
+                img.alt = `Gallery Image ${i}`;
+                img.className = 'custom-gallery-img';
+                img.onclick = () => openCustomModal(img);
+
+                wrapper.appendChild(img);
+                col.appendChild(wrapper);
+                galleryContainer.appendChild(col);
+            }
+
+            function openCustomModal(img) {
+                document.getElementById("customModalImage").src = img.src;
+                const modal = new bootstrap.Modal(document.getElementById('customImageModal'));
+                modal.show();
+            }
+        </script>
 
         <!-- Footer Start -->
         <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
