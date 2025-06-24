@@ -1237,3 +1237,24 @@ img.doctor_images {
     width: 100%;
     object-fit: cover;
 }
+
+.doctors_container {
+    position: relative;
+}
+
+.swiper-slide {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: auto;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: none;
+}
+
+.swiper-pagination-bullet-active {
+    background: #000;
+}
