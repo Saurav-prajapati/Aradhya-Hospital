@@ -726,7 +726,22 @@
             providing the best healthcare experience for every patient.
           </p>
         </div>
-        <div class="row g-3" id="custom-gallery-container"></div>
+        <div class="row g-3" id="custom-gallery-container">
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="custom-gallery-wrapper">
+              <video class="w-100 rounded shadow" controls autoplay loop>
+                <source src="img/video (1).mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3">
+            <div class="custom-gallery-wrapper">
+              <video class="w-100 rounded shadow" controls autoplay loop>
+                <source src="img/video (2).mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- Modal -->
@@ -745,6 +760,7 @@
                 class="w-100 rounded shadow"
                 alt="Enlarged Image"
               />
+              
             </div>
             <button
               type="button"
@@ -754,6 +770,7 @@
             ></button>
           </div>
         </div>
+        
       </div>
     </section>
 
@@ -762,7 +779,7 @@
         "custom-gallery-container"
       );
 
-      for (let i = 1; i <= 12; i++) {
+      for (let i = 1; i <= 10; i++) {
         const col = document.createElement("div");
         col.className = "col-6 col-md-4 col-lg-3";
 
