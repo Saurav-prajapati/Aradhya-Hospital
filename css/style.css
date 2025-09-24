@@ -1258,3 +1258,8 @@ img.doctor_images {
 .swiper-pagination-bullet-active {
     background: #000;
 }
+.custom-gallery-wrapper video {
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
